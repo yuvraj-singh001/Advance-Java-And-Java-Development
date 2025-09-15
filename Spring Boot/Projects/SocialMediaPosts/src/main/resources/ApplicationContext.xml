@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="post" class="com.socialmedia.SocialMediaPosts.SimplePost" scope="prototype"></bean>
+
+    <bean id="postlist" class="com.socialmedia.SocialMediaPosts.SimplePostList" scope="singleton"></bean>
+
+    <bean id="user" class="com.socialmedia.SocialMediaPosts.SimpleUser">
+        <property name="postList" ref="postlist"></property>
+    </bean>
+</beans>

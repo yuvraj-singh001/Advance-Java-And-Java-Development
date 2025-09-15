@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="i3" class="com.laptops.LaptopDealerProject.i3"></bean>
+    <bean id="i5" class="com.laptops.LaptopDealerProject.i5"></bean>
+    <bean id="i7" class="com.laptops.LaptopDealerProject.i7"></bean>
+
+
+    <bean id="microsoftWithi3" class="com.laptops.LaptopDealerProject.Microsoft">
+        <constructor-arg ref="i3"></constructor-arg>
+<!--        the name is variable name and ref i3 for using setter method-->
+<!--        <property name="processor" ref="i3"></property>-->
+    </bean>
+    <bean id="microsoftWithi5" class="com.laptops.LaptopDealerProject.Microsoft">
+        <constructor-arg ref="i5"></constructor-arg>
+    </bean>
+    <bean id="microsoftWithi7" class="com.laptops.LaptopDealerProject.Microsoft">
+        <constructor-arg ref="i7"></constructor-arg>
+    </bean>
+
+
+    <bean id="macBookWithi3" class="com.laptops.LaptopDealerProject.MacBook">
+        <constructor-arg ref="i3"></constructor-arg>
+    </bean>
+    <bean id="macBookWithi5" class="com.laptops.LaptopDealerProject.MacBook">
+        <constructor-arg ref="i5"></constructor-arg>
+    </bean>
+    <bean id="macBookWithi7" class="com.laptops.LaptopDealerProject.MacBook">
+        <constructor-arg ref="i7"></constructor-arg>
+    </bean>
+
+
+    <bean id="dellWithi3" class="com.laptops.LaptopDealerProject.Dell">
+        <constructor-arg ref="i3"></constructor-arg>
+    </bean>
+    <bean id="dellWithi5" class="com.laptops.LaptopDealerProject.Dell">
+        <constructor-arg ref="i5"></constructor-arg>
+    </bean>
+    <bean id="dellWithi7" class="com.laptops.LaptopDealerProject.Dell">
+        <constructor-arg ref="i7"></constructor-arg>
+    </bean>
+</beans>

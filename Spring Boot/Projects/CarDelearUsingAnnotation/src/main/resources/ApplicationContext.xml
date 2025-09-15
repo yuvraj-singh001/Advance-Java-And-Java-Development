@@ -1,0 +1,12 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="-->
+<!--        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">-->
+
+<!--    &lt;!&ndash; bean definitions here &ndash;&gt;-->
+
+<!--    <bean id="familycar" class="com.delear.CarDelear.FamilyCar"></bean>-->
+<!--    <bean id="sportscar" class="com.delear.CarDelear.SportsCar"></bean>-->
+<!--    <bean id="cybertruck" class="com.delear.CarDelear.CyberTruck"></bean>-->
+<!--</beans>-->
